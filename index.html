@@ -1,0 +1,78 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stone, Paper or Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <header align="center">
+      <h1>Stone, Paper or Scissors</h1>
+    </header>
+
+    <div align="right">
+      <a class="button1 small radius">
+      <span href="#" class="fas fa-info-circle" id="abrir" class="abrir-modal"></span>
+    </a>
+    </div>
+<div align="center">
+    <div id="miModal" class="modal">
+      <div class="flex" id="flex">
+        <div class="contenido-modal">
+          <div class="modal-header flex">
+            <h2>Stone, Paper or Scissors</h2>
+            <span class="close" id="close">&times;</span>
+          </div>
+          <div class="modal-body">
+            <p>This game was created with HTML, CSS and Javascript</p>	
+            <br>
+            <p>Compiled to Windows with Electron.</p>
+            <br>
+            <p>Soon available for macOS and Linux.</p>
+            <br>
+          </div>
+          <div class="footer">
+            <h3>Made with <span class="heart">❤</span>  in Peru &copy;</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="modal.js"></script>
+
+
+
+    <div class="marcador">
+      <div class="user-label badge">User</div>
+      <div class="comp-label badge">PC</div>
+      <span id="user-score">0</span> :
+      <span id="comp-score">0</span>
+    </div>
+
+    <div class="result">
+      <p>Play!!</p>
+    </div>
+
+    <div class="opciones">
+      <div class="choice" id="r">
+        <img src="images/piedra.png" alt="">
+      </div>
+      <div class="choice" id="p">
+        <img src="images/papel.png" alt="">
+      </div>
+      <div class="choice" id="t">
+        <img src="images/tijera.png" alt="">
+      </div>
+    </div>
+    <div align="center">
+    <a href="#" class="button medium radius" onclick="window.close()">
+      <span class="lnr lnr-cross"></span>Leave the game
+    </a>
+  </div al>
+    <p id="accion">Play!!!</p>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
